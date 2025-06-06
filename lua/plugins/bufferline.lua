@@ -81,9 +81,6 @@ return {
         enforce_regular_tabs = false,
         always_show_bufferline = true,
       },
-      -- highlights = require("nord").plugins.bufferline.akinsho,
-      -- highlights = require("nord.plugins.bufferline").akinsho(),
-      highlights = require("nordify.plugins.bufferline").get("dark"),
     }
   end,
 }
