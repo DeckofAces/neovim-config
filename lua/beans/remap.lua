@@ -17,5 +17,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Move line(s) up or down in visual mode with K or J
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
