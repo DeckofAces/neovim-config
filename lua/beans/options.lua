@@ -4,7 +4,7 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.o.number = true
 vim.o.relativenumber = true
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 -- Enable break indent
 vim.o.breakindent = true
 
@@ -22,7 +22,11 @@ vim.o.scrolloff = 15
 -- See `:help 'confirm'`
 vim.o.confirm = true
 -- Preview substitutions live, as you type!
-vim.o.inccommand = 'split'
+vim.o.inccommand = "split"
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
+
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
