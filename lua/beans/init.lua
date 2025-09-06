@@ -1,5 +1,5 @@
-require("beans.remap")
 require("beans.options")
+require("beans.remap")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -19,6 +19,6 @@ local opts = {}
 require("lazy").setup("plugins")
 
 -- colour scheme
-vim.cmd("colorscheme catppuccin")
+vim.cmd("colorscheme dracula")
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

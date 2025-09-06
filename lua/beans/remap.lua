@@ -44,3 +44,6 @@ vim.keymap.set("n", "gcO", "O<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>", { desc = 
 
 -- clear search highlighting
 vim.keymap.set("n", "<Esc>", "<esc><cmd>noh<cr>")
+
+-- restart lsp
+vim.keymap.set("n", "<leader>ls", "<esc>:LspRestart", { desc = "Restart LSP" })

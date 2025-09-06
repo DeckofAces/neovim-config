@@ -24,10 +24,11 @@ vim.o.confirm = true
 -- Preview substitutions live, as you type!
 vim.o.inccommand = "split"
 
-vim.opt.hlsearch = true
-vim.opt.incsearch = true
+vim.o.hlsearch = true
+vim.o.incsearch = true
 
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
-vim.opt.termguicolors = true
+vim.o.termguicolors = true
+vim.o.updatetime = 150
