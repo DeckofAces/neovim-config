@@ -47,3 +47,6 @@ vim.keymap.set("n", "<Esc>", "<esc><cmd>noh<cr>")
 
 -- restart lsp
 vim.keymap.set("n", "<leader>ls", "<esc>:LspRestart", { desc = "Restart LSP" })
+
+-- save
+vim.keymap.set("n", "<C-s>", "<cmd>w<cr>", { desc = "Save File" })
