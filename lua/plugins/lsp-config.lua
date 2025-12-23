@@ -18,10 +18,11 @@ return {
       -- Common on_attach
       local function on_attach(_, bufnr)
         local opts = { buffer = bufnr }
-        vim.keymap.set("n", "grd", vim.lsp.buf.definition, opts)
+
+        vim.keymap.set("n", "grn", vim.lsp.buf.rename, { buffer = bufnr, desc = 'LSP: [R]e[n]ame' })
+        vim.keymap.set("n", "grd", vim.lsp.buf.definition, { buffer = bufnr, desc = 'LSP: [G]oto [D]efinition' })
         vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
         vim.keymap.set("n", "grr", vim.lsp.buf.references, opts)
-        vim.keymap.set("n", "grn", vim.lsp.buf.rename, opts)
       end
 
       local capabilities = vim.lsp.protocol.make_client_capabilities()
