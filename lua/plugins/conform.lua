@@ -14,8 +14,8 @@ end, { desc = "Re-enable conform-autoformat-on-save" })
 
 return {
 	"stevearc/conform.nvim",
-	event = { "BufWritePre" },
-	cmd = { "ConformInfo" },
+	-- event = { "BufWritePre" },
+	-- cmd = { "ConformInfo" },
 	---@module "conform"
 	---@type conform.setupOpts
 	keys = {
@@ -65,7 +65,7 @@ return {
 			end
 
 			---@type conform.FormatOpts
-			return { timeout_ms = 500, lsp_format = Utils.lsp.get_lsp_format(bufnr) }
+			return { timeout_ms = 500, lsp_format = "fallback" }
 		end,
 		log_level = vim.log.levels.DEBUG,
 		formatters = {
